@@ -1,3 +1,3 @@
-<input type="text" name="{{ name }}" value="{{ value }}" id="{{ attrs.id }}"
-class="colorfield_field"/>
-<script>!function() { jscolor.init(); }()</script>
+<input type="text" name="{{ name }}" value="{% if value %}{{ value }}{% endif %}" id="{{ attrs.id }}"
+class="jscolor {hash:true, required:false}" />
+<script>!function() {}()</script>
